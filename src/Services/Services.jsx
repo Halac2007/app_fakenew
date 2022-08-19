@@ -18,8 +18,6 @@ const Services = () => {
   const [foodChild5, setFoodChild5] = useState([])
   const [foodChild6, setFoodChild6] = useState([])
 
-  const [sideHome, setSideHome] = useState([])
-
   useEffect(() => {
     const url = `https://kynguyenso.herokuapp.com/an-sach-song-khoe`
 
@@ -40,8 +38,6 @@ const Services = () => {
       setFoodChild4(data.slice(13, 14))
       setFoodChild5(data.slice(14, 15))
       setFoodChild6(data.slice(15, 16))
-
-      setSideHome(data.slice(10, 14))
     })
   }, [])
 
@@ -226,8 +222,6 @@ const Services = () => {
 
   /*--------------chuyên mục kỷ nguyên số ----------------------*/
 
-  const [listTopNewsKNS, setListTopNewsKNS] = useState([])
-
   useEffect(() => {
     const fetchData = async () => {
       const respGlobal = await axios(`https://kynguyenso.herokuapp.com/`)
@@ -239,8 +233,6 @@ const Services = () => {
       const arr3 = res3.data.splice(1, 3)
       const arr4 = res4.data.splice(1, 3)
       const arrNews = [...arr1, ...arr2, ...arr3, ...arr4]
-
-      console.log(arr3)
 
       setListTopNews(arrNews)
     }
