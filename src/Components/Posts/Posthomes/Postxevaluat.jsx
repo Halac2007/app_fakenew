@@ -16,22 +16,22 @@ const Postxevaluat = (props) => {
               typography: {
                 xs: {
                   fontSize: '1.5rem',
-                  paddingLeft: '15vh',
+                  paddingLeft: '28vh',
                 },
                 sm: {
                   paddingTop: '2vh',
-                  paddingLeft: '40vh',
+                  paddingLeft: '60vh',
                   fontSize: '2rem',
                 },
                 md: {
                   paddingTop: '2vh',
                   fontSize: '3rem',
-                  paddingLeft: '50vh',
+                  paddingLeft: '70vh',
                 },
               },
             }}
           >
-            Xe và luật
+            Xe
           </Typography>
         </Grid>
         <Grid container item xs={12} sm={5} md={4}>

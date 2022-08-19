@@ -81,7 +81,7 @@ const CatePost = (props) => {
               typography: {
                 md: { paddingLeft: '50vh', fontSize: '3rem' },
                 sm: { paddingLeft: '20vh', fontSize: '3rem' },
-                xs: { paddingLeft: '5vh', fontSize: '1.5rem' },
+                xs: { paddingLeft: '5vh', fontSize: '1.5rem', paddingBottom: '4vh' },
               },
             }}
           >
@@ -92,34 +92,36 @@ const CatePost = (props) => {
           <Grid item xs={2} sm={4} md={3} className="box-cate-hot">
             {props.hotleft.map((item) => (
               <Link key={Math.random()} href={item.link} sx={{ textDecoration: 'none', color: '#212529' }} className="box-img">
-                <img src={item.image} width="100%" height="auto" alt="" />
-                <Box sx={{ display: 'flex' }}>
-                  <Typography
-                    sx={{
-                      fontSize: '4rem',
-                      fontStyle: 'italic',
-                      fontFamily: 'Basker',
-                      width: '20%',
-                      lineHeight: '1',
-                      typography: { xs: { fontSize: '3rem' }, sm: { fontSize: '4rem' }, md: { fontSize: '5rem' } },
-                    }}
-                  >
-                    1
-                  </Typography>
-                  <Box sx={{ width: '80%' }}>
+                <Box sx={{ paddingBottom: '8vh' }}>
+                  <img src={item.image} width="100%" height="auto" alt="" />
+                  <Box sx={{ display: 'flex' }}>
                     <Typography
                       sx={{
-                        textTransform: 'uppercase',
-                        fontSize: '12px',
-                        marginBottom: '8px',
-                        marginTop: '16px',
-                        borderLeft: '1px solid #333',
-                        paddingLeft: '10px',
+                        fontSize: '4rem',
+                        fontStyle: 'italic',
+                        fontFamily: 'Basker',
+                        width: '20%',
+                        lineHeight: '1',
+                        typography: { xs: { fontSize: '3rem' }, sm: { fontSize: '4rem' }, md: { fontSize: '5rem' } },
                       }}
                     >
-                      Kỷ nguyên số
+                      1
                     </Typography>
-                    <Typography>{item.title}</Typography>
+                    <Box sx={{ width: '80%' }}>
+                      <Typography
+                        sx={{
+                          textTransform: 'uppercase',
+                          fontSize: '12px',
+                          marginBottom: '8px',
+                          marginTop: '16px',
+                          borderLeft: '1px solid #333',
+                          paddingLeft: '10px',
+                        }}
+                      >
+                        Kỷ nguyên số
+                      </Typography>
+                      <Typography>{item.title}</Typography>
+                    </Box>
                   </Box>
                 </Box>
               </Link>

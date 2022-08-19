@@ -73,6 +73,15 @@
   .menu-link {
     display: none;
   }
+  .box-item img {
+    height: 100px;
+  }
+  .box-tintuc {
+    width: 100% !important;
+  }
+  .box-tinnoibat img {
+    height: 100px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -94,6 +103,12 @@
   }
   .menu-link {
     display: none;
+  }
+  .box-tintuc {
+    width: 100% !important;
+  }
+  .box-tinnoibat img {
+    height: 100px;
   }
 }
 @media (max-width: 480px) {
@@ -120,6 +135,9 @@
   .box-tintuc {
     width: 100% !important;
     padding: 15px !important;
+  }
+  .box-tinnoibat img {
+    height: auto;
   }
 }
 
