@@ -16,7 +16,7 @@ const Postxevaluat = (props) => {
               typography: {
                 xs: {
                   fontSize: '1.5rem',
-                  paddingLeft: '28vh',
+                  paddingLeft: '20vh',
                 },
                 sm: {
                   paddingTop: '2vh',
