@@ -6,7 +6,7 @@ const PostKynguyenso = (props) => {
     <>
       <Grid container maxWidth="1200px" paddingTop="20px" spacing={1} margin="auto" className="main-cate">
         <Grid container item xs={12} sm={12} md={12}>
-          <Link href="./chuyen-muc/ky-nguyen-so" sx={{ textDecoration: 'none', color: '#212529' }}>
+          <Link href="../chuyen-muc/ky-nguyen-so" sx={{ textDecoration: 'none', color: '#212529' }}>
             <Typography
               sx={{
                 textAlign: 'center',
