@@ -71,7 +71,7 @@ const CatePost = (props) => {
         </Grid>
       </Grid>
       <Grid container maxWidth="1200px" spacing={3} margin="auto" className="main-cate">
-        <Grid item xs={12} sm={12} md={8} spacing={2}>
+        <Grid item xs={12} sm={12} md={8}>
           <Typography
             sx={{
               textAlign: 'center',
