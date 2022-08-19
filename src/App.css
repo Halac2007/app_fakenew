@@ -1,6 +1,10 @@
 * {
   color: #333333;
 }
+
+*:hover {
+  color: #337ab7;
+}
 .App {
   text-align: center;
 }

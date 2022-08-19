@@ -10,6 +10,7 @@ const PostTintuc = (props) => {
           <Typography
             sx={{
               textAlign: 'center',
+              color: '#333333',
 
               textTransform: 'uppercase',
               typography: {

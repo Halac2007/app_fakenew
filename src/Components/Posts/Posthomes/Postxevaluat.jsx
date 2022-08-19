@@ -6,33 +6,38 @@ const Postxevaluat = (props) => {
     <>
       <Grid container maxWidth="1200px" paddingTop="20px" spacing={1} margin="auto" className="main-cate">
         <Grid container item xs={12} sm={12} md={12}>
-          <Typography
-            sx={{
-              textAlign: 'center',
+          <Link href="/chuyen-muc/xe-va-luat" sx={{ textDecoration: 'none', color: '#212529' }}>
+            <Typography
+              sx={{
+                textAlign: 'center',
 
-              margin: '3% 0',
+                margin: '3% 0',
 
-              textTransform: 'uppercase',
-              typography: {
-                xs: {
-                  fontSize: '1.5rem',
-                  paddingLeft: '20vh',
+                textTransform: 'uppercase',
+                '&:hover': {
+                  color: '#337ab7',
                 },
-                sm: {
-                  paddingTop: '2vh',
-                  paddingLeft: '60vh',
-                  fontSize: '2rem',
+                typography: {
+                  xs: {
+                    fontSize: '1.5rem',
+                    paddingLeft: '20vh',
+                  },
+                  sm: {
+                    paddingTop: '2vh',
+                    paddingLeft: '60vh',
+                    fontSize: '2rem',
+                  },
+                  md: {
+                    paddingTop: '2vh',
+                    fontSize: '3rem',
+                    paddingLeft: '70vh',
+                  },
                 },
-                md: {
-                  paddingTop: '2vh',
-                  fontSize: '3rem',
-                  paddingLeft: '70vh',
-                },
-              },
-            }}
-          >
-            Xe
-          </Typography>
+              }}
+            >
+              Xe
+            </Typography>
+          </Link>
         </Grid>
         <Grid container item xs={12} sm={5} md={4}>
           {props.rightx.map((item) => (
