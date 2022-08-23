@@ -26,7 +26,7 @@ const CustomerSlider = ({ posts }) => {
   return (
     <Slider {...settings}>
       {posts.map((item) => (
-        <Link key={Math.random()} href={item.url} sx={{ textDecoration: 'none', color: '#212529' }} className="box-slider">
+        <Link key={Math.random()} href={item.url} sx={{ textDecoration: 'none', color: '#212529' }}>
           <Box sx={{ margin: '0px 10px' }}>
             <img src={item.image} width="100%" height="auto" alt="" />
             <Typography>{item.title}</Typography>

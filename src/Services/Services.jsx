@@ -1,3 +1,4 @@
+import { Button } from '@mui/material'
 import { Box } from '@mui/system'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
@@ -6,6 +7,7 @@ import Postassk from '../Components/Posts/Posthomes/Postassk'
 import PostKynguyenso from '../Components/Posts/Posthomes/PostKynguyenso'
 import PostTintuc from '../Components/Posts/Posthomes/PostTintuc'
 import Postxevaluat from '../Components/Posts/Posthomes/Postxevaluat'
+import { Link } from 'react-router-dom'
 
 const Services = () => {
   const [oaPost, setOaPost] = useState([])
@@ -268,6 +270,15 @@ const Services = () => {
         child5={catePostChild5}
       />
 
+      <Box m={1} sx={{ display: { xs: 'flex', md: 'none' } }} justifyContent={'center'} alignItems={'center'} fontWeight={'900'}>
+        <Button className="btn-more">
+          <Link to="chuyen-muc/ky-nguyen-so" className="Link_cate">
+            Xem thêm
+            <img src="https://dep.com.vn/wp-content/themes/dep/assets/img/arrow-xt-02.png" />
+          </Link>
+        </Button>
+      </Box>
+
       <Postassk
         main={mainPost}
         list={listPostChild}
@@ -279,7 +290,15 @@ const Services = () => {
         foodchild5={foodChild5}
         foodchild6={foodChild6}
       />
-      <PostTintuc listchil={listTopNews} />
+      <Box m={1} sx={{ display: { xs: 'flex', md: 'none' } }} justifyContent={'center'} alignItems={'center'} fontWeight={'900'}>
+        <Button className="btn-more">
+          <Link to="chuyen-muc/an-sach-song-khoe" className="Link_cate">
+            Xem thêm
+            <img src="https://dep.com.vn/wp-content/themes/dep/assets/img/arrow-xt-02.png" />
+          </Link>
+        </Button>
+      </Box>
+      {/* <PostTintuc listchil={listTopNews} /> */}
       <Postxevaluat
         main={mainPost}
         list={listPostChild}
@@ -291,6 +310,14 @@ const Services = () => {
         carchild5={carPostChild5}
         carchild6={carPostChild6}
       />
+      <Box m={1} sx={{ display: { xs: 'flex', md: 'none' } }} justifyContent={'center'} alignItems={'center'} fontWeight={'900'}>
+        <Button className="btn-more">
+          <Link to="chuyen-muc/xe-va-luat" className="Link_cate">
+            Xem thêm
+            <img src="https://dep.com.vn/wp-content/themes/dep/assets/img/arrow-xt-02.png" />
+          </Link>
+        </Button>
+      </Box>
     </Box>
   )
 }

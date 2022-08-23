@@ -2,13 +2,30 @@ import { Grid, Link, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import React from 'react'
 
+import AdbIcon from '@mui/icons-material/Adb'
+
 const Footer = () => {
   return (
     <Grid container maxWidth="900px" m="auto" p="30px 10px" sx={{ borderTop: '1px solid #333333', marginTop: '15px' }}>
       <Grid container item xs={12} sm={3} md={3} spacing={1}>
-        <Link to="/">
-          <img src="https://static-cms-plo.zadn.vn/v3/web/styles/img/logo.png" alt="" height={'30px'} />
-        </Link>
+        <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, ml: 10 }} />
+        <Typography
+          variant="h6"
+          noWrap
+          component="a"
+          href="/"
+          sx={{
+            mr: 6,
+            display: { xs: 'none', md: 'flex' },
+            fontFamily: 'monospace',
+            fontWeight: 900,
+            letterSpacing: '.3rem',
+            color: 'inherit',
+            textDecoration: 'none',
+          }}
+        >
+          LOGO
+        </Typography>
       </Grid>
       <Grid container item xs={12} sm={9} md={9} spacing={1}>
         <Box>
